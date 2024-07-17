@@ -1,6 +1,6 @@
 <div>
   <button>
-    <img/>
+    <img [src]="'assets/users/' + selectedUser.avatar" [alt]="selectedUser.name"/>
     <span>{{selectedUser.name}}</span> <!--{{}} is dynamic string interpolation-->
   </button>
 </div>
