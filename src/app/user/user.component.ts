@@ -13,7 +13,7 @@ interface User {
   styleUrl: './user.component.css'
 })
 export class UserComponent {
-   @Input({required:true}) user!
+   @Input({required:true}) user!: User;
    @Output() select = new EventEmitter<string>();
 
   get imagePath(){
